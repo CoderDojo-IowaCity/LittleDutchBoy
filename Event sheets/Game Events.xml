@@ -120,7 +120,7 @@
                     <param id="0" name="Audio file">Sea Waves-SoundBible.com-946156036</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;BackgroundSound&quot;</param>
                 </action>
                 <action id="-25" name="Move to bottom" sid="3272795808590057" type="BoringFailMessage" />
                 <action id="2" name="Set visible" sid="3987423650958844" type="GoStart">
@@ -138,6 +138,9 @@
             <actions>
                 <action id="-25" name="Go to layout (by name)" sid="8497274609107654" type="System">
                     <param id="0" name="Layout">&quot;StartPage&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="3086224366422431" type="Audio">
+                    <param id="0" name="Tag">&quot;BackgroundSound&quot;</param>
                 </action>
             </actions>
         </event-block>
