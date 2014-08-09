@@ -149,5 +149,13 @@
                 <action id="-26" name="Restart layout" sid="2846696369748188" type="System" />
             </actions>
         </event-block>
+        <event-block sid="7577370786388683">
+            <conditions>
+                <condition id="0" name="On clicked" sid="6060075037837353" type="Restart" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="4004526922645738" type="System" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
