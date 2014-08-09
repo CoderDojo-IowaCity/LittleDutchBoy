@@ -35,8 +35,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-2</x>
-                        <y>57</y>
+                        <x>20</x>
+                        <y>44</y>
                         <z>0</z>
                         <width>859</width>
                         <height>425</height>
@@ -207,14 +207,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>432</x>
-                        <y>260</y>
+                        <x>296</x>
+                        <y>292</y>
                         <z>0</z>
                         <width>400</width>
                         <height>200</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.050000001</hotspotX>
+                        <hotspotY>1.080000043</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -233,8 +233,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>326</x>
-                        <y>320</y>
+                        <x>281</x>
+                        <y>239</y>
                         <z>0</z>
                         <width>72</width>
                         <height>24</height>
@@ -257,8 +257,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>476</x>
-                        <y>322</y>
+                        <x>562</x>
+                        <y>94</y>
                         <z>0</z>
                         <width>99</width>
                         <height>24</height>

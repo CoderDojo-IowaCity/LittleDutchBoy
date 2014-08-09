@@ -20,6 +20,7 @@
             <actions>
                 <action id="7" name="Go to URL" sid="2471518345327411" type="Browser">
                     <param id="0" name="URL">&quot;http://coderdojoic.org&quot;</param>
+                    <param id="1" name="Target">0</param>
                 </action>
             </actions>
         </event-block>
