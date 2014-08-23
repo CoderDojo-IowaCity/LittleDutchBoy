@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game Events</name>
     <events>
-        <variable constant="0" name="Score" sid="4776420617906794" static="0" type="number">0</variable>
+        <variable constant="0" name="cions" sid="4776420617906794" static="0" type="number">0</variable>
         <variable constant="0" name="waterLevel" sid="1486150611914227" static="0" type="number">0</variable>
         <event-block sid="6922085363675683">
             <conditions>
@@ -59,11 +59,11 @@
                     <param id="1" name="Value">3</param>
                 </action>
                 <action id="-10" name="Add to" sid="7757803368141817" type="System">
-                    <param id="0" name="Variable">Score</param>
+                    <param id="0" name="Variable">cions</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Set text" sid="2338142168674465" type="Score">
-                    <param id="0" name="Text">Score</param>
+                    <param id="0" name="Text">cions</param>
                 </action>
                 <action id="-3" name="Create object" sid="5645165188648447" type="System">
                     <param id="0" name="Object to create">Sprite3</param>
