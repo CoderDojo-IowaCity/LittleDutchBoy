@@ -24,5 +24,15 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="4384991752329816">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3031442949899917" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2345791044002763" type="Text">
+                    <param id="0" name="Text">recentscores</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

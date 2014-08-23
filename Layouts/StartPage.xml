@@ -37,11 +37,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>428</x>
-                        <y>239</y>
+                        <x>414</x>
+                        <y>244</y>
                         <z>0</z>
-                        <width>854</width>
-                        <height>480</height>
+                        <width>856</width>
+                        <height>482</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -63,10 +63,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>155</x>
-                        <y>344</y>
+                        <x>165</x>
+                        <y>140</y>
                         <z>0</z>
-                        <width>117</width>
+                        <width>112</width>
                         <height>24</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -87,14 +87,41 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>141</x>
-                        <y>370</y>
+                        <x>276</x>
+                        <y>140</y>
                         <z>0</z>
                         <width>152</width>
                         <height>24</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="Text" uid="15">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>609</x>
+                        <y>200</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

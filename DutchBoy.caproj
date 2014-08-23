@@ -173,6 +173,9 @@
         <object-type name="GoStart" sid="9516670918191588">
             <plugin id="Button" />
         </object-type>
+        <object-type name="Text" sid="9733540396904645">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">

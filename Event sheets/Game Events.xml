@@ -4,6 +4,7 @@
     <name>Game Events</name>
     <events>
         <variable constant="0" name="Score" sid="4776420617906794" static="0" type="number">0</variable>
+        <variable constant="0" name="recentscores" sid="4353294230575207" static="0" type="number">0</variable>
         <variable constant="0" name="waterLevel" sid="1486150611914227" static="0" type="number">0</variable>
         <event-block sid="6922085363675683">
             <conditions>
@@ -150,6 +151,17 @@
             </conditions>
             <actions>
                 <action id="-26" name="Restart layout" sid="2846696369748188" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="125697232447158">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="9959554860070884" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="934765310976282" type="System">
+                    <param id="0" name="Variable">recentscores</param>
+                    <param id="1" name="Value">Score</param>
+                </action>
             </actions>
         </event-block>
     </events>
