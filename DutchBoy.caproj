@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>DutchBoy</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1cricqmc7q3mz</unique-id>
+    <saved-with-version>17800</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>StartPage</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder expanded="1">
+        <object-type name="TiledBackground" sid="6914630519308308">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite" sid="7449494790463844">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="touchTime" sid="9581272069085698" type="number" />
+            </instance-variables>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4780658775562153" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.395833" y="0.431818" />
+                            <point x="0.5" y="0.363636" />
+                            <point x="0.708333" y="0.5" />
+                            <point x="0.625" y="0.590909" />
+                            <point x="0.5" y="0.704545" />
+                            <point x="0.375" y="0.590909" />
+                            <point x="0.333333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Particles" sid="9572331708342835">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="Touch" sid="1041203830513566">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Sprite2" sid="6918829535156173">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="5418004947246302">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5479230109742437" speed="5">
+                    <frame duration="1" hotspotX="0.502924" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.292398" y="0.113636" />
+                            <point x="0.725146" y="0.106818" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Score" sid="4577951689307775">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite3" sid="7991494798108398">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7942445294303157" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.354167" y="0.386364" />
+                            <point x="0.5" y="0.340909" />
+                            <point x="0.729167" y="0.295455" />
+                            <point x="0.770833" y="0.5" />
+                            <point x="0.75" y="0.727273" />
+                            <point x="0.5" y="0.727273" />
+                            <point x="0.333333" y="0.636364" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="2272575079660085">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="BoringStartPage" sid="608834548522441">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9292624843088304" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button" sid="3949990179427432">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="BoringStartPage2" sid="1876203153620336">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5738259697187989" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="1052266817385216">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Button2" sid="9429684921763547">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="BoringFailMessage" sid="8301747629522425">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1051655147500558" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TryAgain" sid="5920046971654388">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="GoStart" sid="9516670918191588">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Sprite4" sid="1771768362591229">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9607287736765299" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502618" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="8283148059762646">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="701416158798919">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text3" sid="6096603749699465">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text4" sid="6924054550733452">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text5" sid="9579136198145264">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button3" sid="883997780218973">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Text6" sid="5426037350322049">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder expanded="1">
+        <layout>Gameboard.xml</layout>
+        <layout>StartPage.xml</layout>
+        <layout>STORE.xml</layout>
+    </layout-folder>
+    <event-folder expanded="1">
+        <event-sheet>Game Events.xml</event-sheet>
+        <event-sheet>Start Events.xml</event-sheet>
+        <event-sheet>store.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="3">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="7">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="10" />
+    </global-instances>
+    <sounds-folder expanded="1">
+        <file name="Crumbling-Mike_Koenig-1123041125.ogg" />
+        <file name="Large Bubble-SoundBible.com-1084083477.ogg" />
+        <file name="Sea Waves-SoundBible.com-946156036.ogg" />
+    </sounds-folder>
+    <music-folder expanded="1" />
+    <files-folder expanded="0">
+        <file-folder expanded="0" name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
