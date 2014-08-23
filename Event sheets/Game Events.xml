@@ -91,6 +91,9 @@
                 <action id="-2" name="Set Y" sid="8643694001550026" type="Sprite2">
                     <param id="0" name="Y">Sprite2.Y - waterLevel / 20</param>
                 </action>
+                <action id="-2" name="Set Y" sid="4284176556558061" type="sharkie">
+                    <param id="0" name="Y">Sprite2.Y-waterLevel/20</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3888506491506157">
@@ -120,7 +123,7 @@
                     <param id="0" name="Audio file">Sea Waves-SoundBible.com-946156036</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;BackgroundSound&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action id="-25" name="Move to bottom" sid="3272795808590057" type="BoringFailMessage" />
                 <action id="2" name="Set visible" sid="3987423650958844" type="GoStart">
@@ -139,9 +142,6 @@
                 <action id="-25" name="Go to layout (by name)" sid="8497274609107654" type="System">
                     <param id="0" name="Layout">&quot;StartPage&quot;</param>
                 </action>
-                <action id="6" name="Stop" sid="3086224366422431" type="Audio">
-                    <param id="0" name="Tag">&quot;BackgroundSound&quot;</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="2362795478191791">
@@ -150,27 +150,6 @@
             </conditions>
             <actions>
                 <action id="-26" name="Restart layout" sid="2846696369748188" type="System" />
-            </actions>
-        </event-block>
-        <event-block sid="1811193908983978">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="9813867979968641" type="System">
-                    <param id="0" name="Interval (seconds)">3</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="5194637754611541" type="System">
-                    <param id="0" name="Object to create">Sprite4</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">0</param>
-                    <param id="3" name="Y">0</param>
-                </action>
-                <action id="-3" name="Create object" sid="2060111291804494" type="System">
-                    <param id="0" name="Object to create">Particles</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">Sprite4.X</param>
-                    <param id="3" name="Y">Sprite4.Y</param>
-                </action>
             </actions>
         </event-block>
     </events>
