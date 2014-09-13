@@ -3,31 +3,17 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game Events</name>
     <events>
+        <variable constant="0" name="holespawned" sid="3429555735235003" static="0" type="number">1</variable>
+        <variable constant="0" name="holespwantime" sid="9939855691263395" static="0" type="number">4</variable>
         <variable constant="0" name="Score" sid="4776420617906794" static="0" type="number">0</variable>
         <variable constant="0" name="waterLevel" sid="1486150611914227" static="0" type="number">0</variable>
         <event-block sid="6922085363675683">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="5776919506103175" type="System">
-                    <param id="0" name="Interval (seconds)">3</param>
+                    <param id="0" name="Interval (seconds)">holespwantime</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-3" name="Create object" sid="5911238079309754" type="System">
-                    <param id="0" name="Object to create">Sprite</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">random(TiledBackground.Width)</param>
-                    <param id="3" name="Y">random(TiledBackground.Height)+TiledBackground.Y</param>
-                </action>
-                <action id="-3" name="Create object" sid="4005815851441671" type="System">
-                    <param id="0" name="Object to create">Particles</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">Sprite.X</param>
-                    <param id="3" name="Y">Sprite.Y</param>
-                </action>
-                <action id="-10" name="Add to" sid="9565808951688603" type="System">
-                    <param id="0" name="Variable">waterLevel</param>
-                    <param id="1" name="Value">3</param>
-                </action>
                 <action id="25" name="Play at object" sid="9231821985785367" type="Audio">
                     <param id="0" name="Audio file">Crumbling-Mike_Koenig-1123041125</param>
                     <param id="1" name="Loop">0</param>
@@ -39,6 +25,35 @@
                     <param id="7" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="8870568463576956">
+                    <conditions>
+                        <condition id="-10" name="For" sid="6070471597798027" type="System">
+                            <param id="0" name="Name">&quot;&quot;</param>
+                            <param id="1" name="Start index">1</param>
+                            <param id="2" name="End index">holespawned</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="2040557163048746" type="System">
+                            <param id="0" name="Object to create">Sprite</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">random(TiledBackground.Width)</param>
+                            <param id="3" name="Y">random(TiledBackground.Height)+TiledBackground.Y</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="1009830339395888" type="System">
+                            <param id="0" name="Object to create">Particles</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">Sprite.X</param>
+                            <param id="3" name="Y">Sprite.Y</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="6445902762613346" type="System">
+                            <param id="0" name="Variable">waterLevel</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="3850465448383248">
             <conditions>
@@ -120,7 +135,7 @@
                     <param id="0" name="Audio file">Sea Waves-SoundBible.com-946156036</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;BackgroundSound&quot;</param>
                 </action>
                 <action id="-25" name="Move to bottom" sid="3272795808590057" type="BoringFailMessage" />
                 <action id="2" name="Set visible" sid="3987423650958844" type="GoStart">
@@ -139,6 +154,9 @@
                 <action id="-25" name="Go to layout (by name)" sid="8497274609107654" type="System">
                     <param id="0" name="Layout">&quot;StartPage&quot;</param>
                 </action>
+                <action id="6" name="Stop" sid="3086224366422431" type="Audio">
+                    <param id="0" name="Tag">&quot;BackgroundSound&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="2362795478191791">
@@ -149,12 +167,41 @@
                 <action id="-26" name="Restart layout" sid="2846696369748188" type="System" />
             </actions>
         </event-block>
-        <event-block sid="7577370786388683">
+        <event-block sid="2872837666069899">
             <conditions>
-                <condition id="0" name="On clicked" sid="6060075037837353" type="Restart" />
+                <condition id="-6" name="Every X seconds" sid="3302873831039875" type="System">
+                    <param id="0" name="Interval (seconds)">15</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3136109492745514" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="-26" name="Restart layout" sid="4004526922645738" type="System" />
+                <action id="-11" name="Subtract from" sid="8270802850904252" type="System">
+                    <param id="0" name="Variable">holespwantime</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2678862828580519">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5092467112510287" type="System">
+                    <param id="0" name="Variable">holespwantime</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1937285950455988" type="System">
+                    <param id="0" name="Variable">holespwantime</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-10" name="Add to" sid="9546500569717005" type="System">
+                    <param id="0" name="Variable">holespawned</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
     </events>

@@ -42,7 +42,7 @@
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D web</prop>
-        <prop name="Preview browser">Chrome</prop>
+        <prop name="Preview browser">Firefox</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -58,7 +58,7 @@
             </instance-variables>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4780658775562153" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.395833" y="0.431818" />
                             <point x="0.5" y="0.363636" />
@@ -165,24 +165,29 @@
         <object-type name="GoStart" sid="9516670918191588">
             <plugin id="Button" />
         </object-type>
-        <object-type name="TiledBackground2" sid="4298756540934489">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="Sprite4" sid="6972951999614511">
+        <object-type name="Sprite4" sid="3456344045308063">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9343507416996343" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2309901499401648" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground3" sid="1303512171071855">
-            <plugin id="TiledBg" />
-            <texture />
+        <object-type name="Sprite5" sid="4469093017034368">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5804521475519662" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
-        <object-type name="Restart" sid="3468533259649236">
-            <plugin id="Button" />
+        <object-type name="Sprite6" sid="4820051820016063">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3217642482827064" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
@@ -224,7 +229,7 @@
     </sounds-folder>
     <music-folder expanded="1" />
     <files-folder expanded="1">
-        <file-folder expanded="0" name="Icons">
+        <file-folder expanded="1" name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />
             <file name="icon-114.png" />
